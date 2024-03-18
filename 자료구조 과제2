@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+#define X 2
+#define Y 3
+#define Z 4
+
+int main() {
+    int array[X][Y][Z];
+
+    printf("3차원 배열의 요소를 입력하세요:\n");
+    for (int x = 0; x < X; x++) {
+        for (int y = 0; y < Y; y++) {
+            for (int z = 0; z < Z; z++) {
+                printf("array[%d][%d][%d] = ", x, y, z);
+                scanf_s("%d", &array[x][y][z]);
+            }
+        }
+    }
+
+    printf("\n입력된 3차원 배열:\n");
+    for (int x = 0; x < X; x++) {
+        for (int y = 0; y < Y; y++) {
+            for (int z = 0; z < Z; z++) {
+                printf("array[%d][%d][%d] = %d\n", x, y, z, array[x][y][z]);
+            }
+        }
+    }
+
+    return 0;
+}
