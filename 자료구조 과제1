@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 #define MAX 100
-#define NUM 4
+#define NUM 1
 
 int main() {
     char* strings[NUM];
